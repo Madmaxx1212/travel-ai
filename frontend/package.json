@@ -1,0 +1,30 @@
+{
+    "name": "ai-travel-guardian-frontend",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "react": "^18.3.0",
+        "react-dom": "^18.3.0",
+        "react-router-dom": "^6.23.1",
+        "axios": "^1.7.2",
+        "zustand": "^4.5.2",
+        "framer-motion": "^11.2.10",
+        "recharts": "^2.12.7",
+        "lucide-react": "^0.379.0",
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^2.3.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.3.0",
+        "vite": "^5.2.13",
+        "tailwindcss": "^3.4.3",
+        "postcss": "^8.4.38",
+        "autoprefixer": "^10.4.19"
+    }
+}

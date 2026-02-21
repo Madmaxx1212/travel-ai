@@ -1,0 +1,173 @@
+2026-02-21 19:59:21 | INFO     | travel_guardian | ============================================================
+2026-02-21 19:59:21 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 19:59:21 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:00:30 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:00:30 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:00:30 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:00:30 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:00:30 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:00:30 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:00:30 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:14:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:14:53 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:14:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:14:53 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:14:53 | INFO     | travel_guardian | [INFO] Database empty -- running seed data...
+2026-02-21 20:14:59 | INFO     | travel_guardian | [INFO] Training XGBoost model...
+2026-02-21 20:14:59 | ERROR    | travel_guardian | [ERROR] ML model failed: You have to supply one of 'by' and 'level'
+2026-02-21 20:15:51 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:15:52 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:15:52 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:15:52 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:15:52 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:15:52 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:15:52 | INFO     | travel_guardian |   Model: not loaded
+2026-02-21 20:15:52 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:15:52 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:15:52 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:16:03 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:16:03 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:16:03 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:16:03 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:16:09 | INFO     | travel_guardian | [INFO] Training XGBoost model...
+2026-02-21 20:16:09 | ERROR    | travel_guardian | [ERROR] ML model failed: You have to supply one of 'by' and 'level'
+2026-02-21 20:16:30 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:16:31 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:16:31 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:16:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:16:31 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:16:31 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:16:31 | INFO     | travel_guardian |   Model: not loaded
+2026-02-21 20:16:31 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:16:31 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:16:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:16:31 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:19:38 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:19:45 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:19:45 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:19:45 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:19:45 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:19:51 | INFO     | travel_guardian | [INFO] Training XGBoost model...
+2026-02-21 20:19:52 | INFO     | travel_guardian | [OK] Model trained -- Accuracy: 0.775, AUC: 0.7341
+2026-02-21 20:20:20 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:20:21 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:20:21 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:20:21 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:20:21 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:20:21 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:20:21 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:20:21 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:20:21 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:20:21 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:20:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:20:43 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:20:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:20:43 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:20:50 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:21:15 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:21:16 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:21:16 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:21:16 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:21:16 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:21:16 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:21:16 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:21:16 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:21:16 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:21:16 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:22:47 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:22:47 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:22:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:22:53 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:22:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:22:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:22:53 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:22:53 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:22:53 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:22:53 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:23:02 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:23:29 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:23:29 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:23:31 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:23:31 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:23:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:23:31 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:23:31 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:23:31 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:23:31 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:23:31 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:23:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:23:31 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:23:31 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:23:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:23:31 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:23:31 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:23:31 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:23:31 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:23:31 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:23:31 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:08 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:24:08 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:24:13 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:13 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:24:13 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:13 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:24:13 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:13 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:24:13 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:13 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:24:18 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:24:18 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:24:42 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:24:42 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:24:43 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:24:43 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:24:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:43 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:24:43 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:24:43 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:24:43 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:24:43 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:24:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:43 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:24:43 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:24:43 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:24:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:43 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:24:43 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:24:43 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:24:43 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:24:43 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:24:43 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:43 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:24:51 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:51 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:24:51 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:51 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:51 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:24:51 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:24:51 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:24:51 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:24:55 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:24:55 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:25:19 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:25:19 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:25:20 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:25:20 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:25:20 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:20 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:25:20 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:25:20 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:25:20 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:25:20 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:25:20 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:20 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:25:20 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:25:20 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:20 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:25:20 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:25:20 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:25:20 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:25:20 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:25:20 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:20 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:25:20 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...

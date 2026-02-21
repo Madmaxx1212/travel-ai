@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0A0F1E;
+  --navy-light: #111827;
+  --card: #1E2535;
+  --border: #2D3748;
+  --primary: #3B82F6;
+  --accent: #10B981;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--navy);
+  color: #F9FAFB;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-light); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4a5568; }
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(30, 37, 53, 0.7);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(45, 55, 72, 0.5);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #3B82F6, #10B981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Particle animation for landing */
+@keyframes particles {
+  0%, 100% { opacity: 0; transform: translateY(0) scale(0); }
+  50% { opacity: 1; transform: translateY(-40px) scale(1); }
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(59, 130, 246, 0.4);
+  border-radius: 50%;
+  animation: particles 4s infinite;
+}
+
+/* Smooth page transitions */
+.page-enter { opacity: 0; transform: translateY(10px); }
+.page-enter-active { opacity: 1; transform: translateY(0); transition: all 0.3s ease; }

@@ -1,0 +1,268 @@
+{
+  "Delhi": {
+    "top_attractions": [
+      {"name": "Red Fort", "description": "UNESCO World Heritage Site, Mughal-era fort complex", "cost": "₹35 (Indian), ₹500 (Foreign)", "best_time": "Morning", "duration_mins": 120},
+      {"name": "India Gate", "description": "Iconic war memorial and national monument", "cost": "Free", "best_time": "Evening/Sunset", "duration_mins": 60},
+      {"name": "Qutub Minar", "description": "73m tall minaret, oldest in India, UNESCO site", "cost": "₹35", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Humayun's Tomb", "description": "Mughal garden tomb, precursor to Taj Mahal", "cost": "₹35", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Lotus Temple", "description": "Bahai House of Worship shaped like a lotus flower", "cost": "Free", "best_time": "Afternoon", "duration_mins": 60},
+      {"name": "Akshardham Temple", "description": "Massive Hindu temple with exhibitions and gardens", "cost": "Free (exhibitions extra)", "best_time": "Afternoon", "duration_mins": 180},
+      {"name": "Chandni Chowk", "description": "Historic bazaar with street food and shopping", "cost": "Free", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Jama Masjid", "description": "One of India's largest mosques, stunning architecture", "cost": "Free", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Raj Ghat", "description": "Memorial to Mahatma Gandhi", "cost": "Free", "best_time": "Morning", "duration_mins": 45},
+      {"name": "National Museum", "description": "India's largest museum with 200,000+ artifacts", "cost": "₹20", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Hauz Khas Village", "description": "Trendy neighbourhood with cafes, bars, and ruins", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "Lodhi Garden", "description": "Beautiful park with 15th century tombs", "cost": "Free", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Connaught Place", "description": "Colonial-era shopping district", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "Dilli Haat", "description": "Open-air craft bazaar and food court", "cost": "₹30", "best_time": "Afternoon", "duration_mins": 120},
+      {"name": "Gurudwara Bangla Sahib", "description": "Prominent Sikh temple with community kitchen", "cost": "Free", "best_time": "Morning", "duration_mins": 60}
+    ],
+    "food_spots": [
+      {"name": "Karim's", "cuisine": "Mughlai", "area": "Jama Masjid", "price_range": "₹300-600", "specialty": "Mutton Korma"},
+      {"name": "Paranthe Wali Gali", "cuisine": "North Indian", "area": "Chandni Chowk", "price_range": "₹100-250", "specialty": "Stuffed Paranthas"},
+      {"name": "Indian Accent", "cuisine": "Modern Indian", "area": "The Lodhi", "price_range": "₹3000-5000", "specialty": "Daulat Ki Chaat"},
+      {"name": "Bukhara", "cuisine": "North-West Frontier", "area": "ITC Maurya", "price_range": "₹3500-6000", "specialty": "Dal Bukhara"},
+      {"name": "Al Jawahar", "cuisine": "Mughlai", "area": "Jama Masjid", "price_range": "₹250-500", "specialty": "Nihari"},
+      {"name": "Natraj Dahi Bhalle", "cuisine": "Street Food", "area": "Chandni Chowk", "price_range": "₹50-150", "specialty": "Dahi Bhalle"},
+      {"name": "Moti Mahal", "cuisine": "Tandoori", "area": "Daryaganj", "price_range": "₹400-800", "specialty": "Butter Chicken"},
+      {"name": "Kuremal Mohan Lal Kulfi", "cuisine": "Dessert", "area": "Chawri Bazaar", "price_range": "₹80-200", "specialty": "Faluda Kulfi"},
+      {"name": "SodaBottleOpenerWala", "cuisine": "Parsi", "area": "Khan Market", "price_range": "₹500-900", "specialty": "Berry Pulao"},
+      {"name": "Rajinder Da Dhaba", "cuisine": "Punjabi", "area": "Safdarjung", "price_range": "₹200-450", "specialty": "Butter Chicken"}
+    ],
+    "neighbourhoods": [
+      {"name": "Old Delhi", "character": "Historic, chaotic, foodie paradise with narrow lanes"},
+      {"name": "Connaught Place", "character": "Colonial architecture, shopping, restaurants"},
+      {"name": "Hauz Khas", "character": "Trendy, artsy, nightlife hub with ancient ruins"},
+      {"name": "Khan Market", "character": "Upscale shopping and dining district"}
+    ],
+    "transport": {"metro": "Delhi Metro covers most tourist areas. Buy a Tourist Card for unlimited rides.", "auto": "Use meter autos or negotiate. Typical ride ₹30-100.", "cab": "Uber/Ola widely available. Airport to centre ~₹400-600."},
+    "tips": ["Avoid outdoor sightseeing in May-June (extreme heat)", "Carry water bottle everywhere", "Best season: October to March", "Metro is fastest for most tourist spots"]
+  },
+  "Mumbai": {
+    "top_attractions": [
+      {"name": "Gateway of India", "description": "Iconic arch monument overlooking the Arabian Sea", "cost": "Free", "best_time": "Morning/Evening", "duration_mins": 60},
+      {"name": "Marine Drive", "description": "3.6km seafront promenade, the Queen's Necklace", "cost": "Free", "best_time": "Sunset", "duration_mins": 90},
+      {"name": "Elephanta Caves", "description": "UNESCO rock-cut cave temples on island", "cost": "₹40 + ₹200 ferry", "best_time": "Morning", "duration_mins": 240},
+      {"name": "Chhatrapati Shivaji Terminus", "description": "UNESCO Victorian Gothic railway station", "cost": "Free (exterior)", "best_time": "Anytime", "duration_mins": 30},
+      {"name": "Dharavi", "description": "Guided tours of Asia's largest slum — vibrant economy", "cost": "₹600-1000 tour", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Colaba Causeway", "description": "Bustling street market for shopping and food", "cost": "Free", "best_time": "Afternoon", "duration_mins": 120},
+      {"name": "Siddhivinayak Temple", "description": "Revered Hindu temple dedicated to Lord Ganesha", "cost": "Free", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Haji Ali Dargah", "description": "Mosque on an islet connected by a causeway", "cost": "Free", "best_time": "Low tide", "duration_mins": 60},
+      {"name": "Bandra-Worli Sea Link", "description": "Stunning cable-stayed bridge, drive across", "cost": "₹75 toll", "best_time": "Evening", "duration_mins": 30},
+      {"name": "Juhu Beach", "description": "Popular beach with street food stalls", "cost": "Free", "best_time": "Evening", "duration_mins": 90}
+    ],
+    "food_spots": [
+      {"name": "Leopold Cafe", "cuisine": "Continental/Indian", "area": "Colaba", "price_range": "₹400-800", "specialty": "Fish & Chips"},
+      {"name": "Bademiya", "cuisine": "Mughlai/Kebabs", "area": "Behind Taj Hotel", "price_range": "₹200-500", "specialty": "Seekh Kebab Rolls"},
+      {"name": "Trishna", "cuisine": "Seafood", "area": "Fort", "price_range": "₹800-1500", "specialty": "Butter Garlic Crab"},
+      {"name": "Cafe Mondegar", "cuisine": "Continental", "area": "Colaba", "price_range": "₹400-700", "specialty": "Burgers & Music"},
+      {"name": "Swati Snacks", "cuisine": "Gujarati Street Food", "area": "Tardeo", "price_range": "₹200-400", "specialty": "Panki Chatni"},
+      {"name": "Sardar Pav Bhaji", "cuisine": "Street Food", "area": "Tardeo", "price_range": "₹100-200", "specialty": "Pav Bhaji"},
+      {"name": "Britannia & Co", "cuisine": "Parsi", "area": "Ballard Estate", "price_range": "₹400-700", "specialty": "Berry Pulao"},
+      {"name": "Elco Pani Puri Centre", "cuisine": "Street Food", "area": "Bandra", "price_range": "₹50-150", "specialty": "Pani Puri"},
+      {"name": "Wasabi by Morimoto", "cuisine": "Japanese", "area": "Taj Mahal Palace", "price_range": "₹3000-6000", "specialty": "Omakase Sushi"},
+      {"name": "Mahesh Lunch Home", "cuisine": "Seafood", "area": "Fort", "price_range": "₹600-1200", "specialty": "Surmai Fry"}
+    ],
+    "neighbourhoods": [
+      {"name": "Colaba", "character": "Tourist hub — Gateway of India, Taj Hotel, markets"},
+      {"name": "Bandra", "character": "Trendy suburb with cafes, nightlife, Bollywood homes"},
+      {"name": "Fort/Kala Ghoda", "character": "Art district with galleries, heritage buildings"},
+      {"name": "Lower Parel", "character": "Modern dining and entertainment hub"}
+    ],
+    "transport": {"metro": "Mumbai Metro Line 1 covers Versova-Andheri-Ghatkopar. More lines expanding.", "auto": "Auto-rickshaws only in suburbs. Kaali-peeli taxis in South Mumbai.", "cab": "Uber/Ola everywhere. Airport to South Mumbai ~₹600-900."},
+    "tips": ["Avoid monsoon months (June-September) for sightseeing", "Local trains are fastest but extremely crowded during rush hours", "Best season: November to February", "Carry an umbrella during monsoons"]
+  },
+  "Bangalore": {
+    "top_attractions": [
+      {"name": "Lalbagh Botanical Garden", "description": "240-acre garden with rare plants and glass house", "cost": "₹25", "best_time": "Morning", "duration_mins": 120},
+      {"name": "Cubbon Park", "description": "300-acre green lung in city centre", "cost": "Free", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Bangalore Palace", "description": "Tudor-style palace inspired by Windsor Castle", "cost": "₹230", "best_time": "Morning", "duration_mins": 90},
+      {"name": "ISKCON Temple", "description": "Grand Krishna temple with cultural complex", "cost": "Free", "best_time": "Evening", "duration_mins": 90},
+      {"name": "Tipu Sultan's Summer Palace", "description": "18th century teak wood palace", "cost": "₹15", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Commercial Street", "description": "Major shopping district for clothing and accessories", "cost": "Free", "best_time": "Afternoon", "duration_mins": 150},
+      {"name": "Nandi Hills", "description": "Hill station 60km from city, sunrise viewpoint", "cost": "₹15", "best_time": "Dawn", "duration_mins": 240},
+      {"name": "UB City Mall", "description": "Luxury shopping and dining destination", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "Vidhana Soudha", "description": "Impressive state legislature building", "cost": "Free (exterior)", "best_time": "Evening (illuminated)", "duration_mins": 30},
+      {"name": "HAL Aerospace Museum", "description": "Aviation history with real aircraft displays", "cost": "₹50", "best_time": "Morning", "duration_mins": 120}
+    ],
+    "food_spots": [
+      {"name": "MTR (Mavalli Tiffin Rooms)", "cuisine": "South Indian", "area": "Basavanagudi", "price_range": "₹150-350", "specialty": "Masala Dosa & Filter Coffee"},
+      {"name": "Vidyarthi Bhavan", "cuisine": "South Indian", "area": "Gandhi Bazaar", "price_range": "₹100-200", "specialty": "Benne Masala Dosa"},
+      {"name": "Koshy's", "cuisine": "Multi-cuisine", "area": "St Marks Road", "price_range": "₹300-600", "specialty": "Appam & Stew"},
+      {"name": "Nagarjuna", "cuisine": "Andhra", "area": "Residency Road", "price_range": "₹400-700", "specialty": "Andhra Meals"},
+      {"name": "Toit Brewpub", "cuisine": "Pub/Continental", "area": "Indiranagar", "price_range": "₹600-1200", "specialty": "Craft Beer & Pizza"},
+      {"name": "Empire Restaurant", "cuisine": "Biryani/Kebabs", "area": "Church Street", "price_range": "₹300-600", "specialty": "Biryani"},
+      {"name": "CTR (Central Tiffin Room)", "cuisine": "South Indian", "area": "Malleshwaram", "price_range": "₹80-200", "specialty": "Benne Dosa"},
+      {"name": "Brahmin's Coffee Bar", "cuisine": "South Indian", "area": "Basavanagudi", "price_range": "₹50-100", "specialty": "Idli Vada Combo"}
+    ],
+    "neighbourhoods": [
+      {"name": "Indiranagar", "character": "Hip nightlife, craft breweries, upscale dining"},
+      {"name": "Koramangala", "character": "Startup hub, cafes, young crowd"},
+      {"name": "MG Road / Brigade Road", "character": "Shopping, dining, city centre buzz"},
+      {"name": "Malleshwaram", "character": "Traditional markets, temples, authentic food"}
+    ],
+    "transport": {"metro": "Namma Metro covers key corridors. Purple & Green lines operational.", "auto": "Negotiate or use meter. Typical ₹30-150.", "cab": "Uber/Ola reliable. Airport to MG Road ~₹500-800."},
+    "tips": ["Weather is pleasant year-round (Garden City)", "Traffic is heavy — use metro when possible", "Best season: October to February", "Weekends have heavy traffic on outskirts"]
+  },
+  "Goa": {
+    "top_attractions": [
+      {"name": "Baga Beach", "description": "Popular beach with water sports and nightlife", "cost": "Free", "best_time": "Morning/Evening", "duration_mins": 180},
+      {"name": "Old Goa Churches", "description": "UNESCO World Heritage basilicas and cathedrals", "cost": "Free", "best_time": "Morning", "duration_mins": 120},
+      {"name": "Fort Aguada", "description": "17th century Portuguese fort with lighthouse", "cost": "Free", "best_time": "Afternoon", "duration_mins": 90},
+      {"name": "Dudhsagar Falls", "description": "India's tallest tiered waterfall in the Ghats", "cost": "₹400 jeep ride", "best_time": "Monsoon season", "duration_mins": 360},
+      {"name": "Anjuna Flea Market", "description": "Famous Wednesday market with hippie vibes", "cost": "Free", "best_time": "Morning (Wed only)", "duration_mins": 180},
+      {"name": "Chapora Fort", "description": "Hilltop fort with panoramic views (Dil Chahta Hai fame)", "cost": "Free", "best_time": "Sunset", "duration_mins": 60},
+      {"name": "Palolem Beach", "description": "Crescent-shaped beach in South Goa, quieter", "cost": "Free", "best_time": "Morning", "duration_mins": 180},
+      {"name": "Spice Plantations", "description": "Guided tours of tropical spice gardens", "cost": "₹400-600", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Casino Cruise", "description": "Floating casinos on the Mandovi River", "cost": "₹2000-5000", "best_time": "Evening", "duration_mins": 240},
+      {"name": "Fontainhas Latin Quarter", "description": "Colourful Portuguese-era neighbourhood in Panaji", "cost": "Free", "best_time": "Morning", "duration_mins": 90}
+    ],
+    "food_spots": [
+      {"name": "Fisherman's Wharf", "cuisine": "Goan Seafood", "area": "Cavelossim", "price_range": "₹600-1200", "specialty": "Fish Thali"},
+      {"name": "Gunpowder", "cuisine": "South Indian/Goan", "area": "Assagao", "price_range": "₹400-800", "specialty": "Pork Vindaloo"},
+      {"name": "Britto's", "cuisine": "Multi-cuisine", "area": "Baga Beach", "price_range": "₹400-900", "specialty": "Goan Fish Curry"},
+      {"name": "Vinayak Family Restaurant", "cuisine": "Goan", "area": "Assagao", "price_range": "₹200-400", "specialty": "Chicken Cafreal"},
+      {"name": "Thalassa", "cuisine": "Greek", "area": "Vagator", "price_range": "₹800-1500", "specialty": "Sunset Dinner"},
+      {"name": "Ritz Classic", "cuisine": "Goan", "area": "Panaji", "price_range": "₹250-500", "specialty": "Prawn Balchao"},
+      {"name": "Curlies Beach Shack", "cuisine": "Beach Shack", "area": "Anjuna", "price_range": "₹300-700", "specialty": "Grilled Fish & Beer"},
+      {"name": "Martin's Corner", "cuisine": "Goan", "area": "Betalbatim", "price_range": "₹400-800", "specialty": "Crab Masala"}
+    ],
+    "neighbourhoods": [
+      {"name": "North Goa", "character": "Lively beaches, nightlife, tourist-heavy — Baga, Calangute, Anjuna"},
+      {"name": "South Goa", "character": "Quieter, cleaner beaches, luxury resorts — Palolem, Benaulim"},
+      {"name": "Panaji", "character": "State capital with Portuguese heritage, river cruises"},
+      {"name": "Old Goa", "character": "Historic churches and cathedrals, UNESCO area"}
+    ],
+    "transport": {"metro": "No metro. Roads and buses only.", "auto": "Auto-rickshaws and motorcycle taxis (pilots) available.", "cab": "Rent a scooter (₹300-500/day) for best experience. Taxis can be expensive."},
+    "tips": ["Best season: November to February", "Rent a scooter for independent exploration", "North Goa for parties, South Goa for peace", "Carry cash — many beach shacks don't accept cards"]
+  },
+  "Jaipur": {
+    "top_attractions": [
+      {"name": "Amber Fort", "description": "Majestic hilltop fort with Sheesh Mahal (Mirror Palace)", "cost": "₹200", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Hawa Mahal", "description": "Palace of Winds with 953 windows", "cost": "₹50", "best_time": "Morning", "duration_mins": 60},
+      {"name": "City Palace", "description": "Royal residence with museums and courtyards", "cost": "₹200", "best_time": "Morning", "duration_mins": 120},
+      {"name": "Jantar Mantar", "description": "UNESCO astronomical observation site", "cost": "₹50", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Nahargarh Fort", "description": "Hilltop fort with panoramic city views", "cost": "₹50", "best_time": "Sunset", "duration_mins": 120},
+      {"name": "Jal Mahal", "description": "Water palace in the middle of Man Sagar Lake", "cost": "Free (viewing)", "best_time": "Evening", "duration_mins": 30},
+      {"name": "Albert Hall Museum", "description": "Oldest museum in Rajasthan, Indo-Saracenic architecture", "cost": "₹40", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Johari Bazaar", "description": "Jewellery market in the Pink City", "cost": "Free", "best_time": "Afternoon", "duration_mins": 120},
+      {"name": "Birla Mandir", "description": "White marble Hindu temple", "cost": "Free", "best_time": "Evening", "duration_mins": 45},
+      {"name": "Chokhi Dhani", "description": "Rajasthani village resort with cultural shows", "cost": "₹700-1500", "best_time": "Evening", "duration_mins": 180}
+    ],
+    "food_spots": [
+      {"name": "LMB (Laxmi Mishthan Bhandar)", "cuisine": "Rajasthani", "area": "Johari Bazaar", "price_range": "₹200-500", "specialty": "Dal Baati Churma"},
+      {"name": "Rawat Mishthan Bhandar", "cuisine": "Sweets/Snacks", "area": "Station Road", "price_range": "₹100-300", "specialty": "Pyaaz Kachori"},
+      {"name": "Suvarna Mahal", "cuisine": "Fine Dining Indian", "area": "Rambagh Palace", "price_range": "₹3000-6000", "specialty": "Royal Rajasthani Thali"},
+      {"name": "Tapri Central", "cuisine": "Cafe/Tea", "area": "C-Scheme", "price_range": "₹100-300", "specialty": "Kadak Chai & Maggi"},
+      {"name": "Spice Court", "cuisine": "Rajasthani", "area": "Civil Lines", "price_range": "₹400-800", "specialty": "Laal Maas"},
+      {"name": "Niros", "cuisine": "Multi-cuisine", "area": "MI Road", "price_range": "₹400-800", "specialty": "Continental & Rajasthani"}
+    ],
+    "neighbourhoods": [
+      {"name": "Pink City (Old City)", "character": "Iconic pink-painted buildings, historic bazaars"},
+      {"name": "C-Scheme", "character": "Upscale area with restaurants and cafes"},
+      {"name": "Amer", "character": "Fort area, heritage walks, elephant rides"}
+    ],
+    "transport": {"metro": "Jaipur Metro covers limited routes.", "auto": "Shared and private autos available. Negotiate fare.", "cab": "Uber/Ola available. Hire a full-day cab for ₹1500-2500 for sightseeing."},
+    "tips": ["Best season: October to March", "Hire a local guide at forts for ₹300-500", "Buy traditional block-print textiles", "Drink lots of water — it's a desert city"]
+  },
+  "Hyderabad": {
+    "top_attractions": [
+      {"name": "Charminar", "description": "Iconic 16th century mosque with 4 minarets", "cost": "₹25", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Golconda Fort", "description": "Medieval fortress known for acoustic architecture", "cost": "₹25", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Ramoji Film City", "description": "World's largest film studio complex", "cost": "₹1500", "best_time": "Full day", "duration_mins": 360},
+      {"name": "Salar Jung Museum", "description": "One of India's largest single-person art collections", "cost": "₹20", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Hussain Sagar Lake", "description": "Large heart-shaped lake with Buddha statue", "cost": "₹60 boat ride", "best_time": "Evening", "duration_mins": 90},
+      {"name": "Chowmahalla Palace", "description": "18th century palace of the Nizams", "cost": "₹80", "best_time": "Morning", "duration_mins": 90},
+      {"name": "HITEC City", "description": "IT hub with modern architecture and dining", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "Laad Bazaar", "description": "Famous bangle market near Charminar", "cost": "Free", "best_time": "Afternoon", "duration_mins": 90}
+    ],
+    "food_spots": [
+      {"name": "Paradise Biryani", "cuisine": "Hyderabadi", "area": "Secunderabad", "price_range": "₹300-600", "specialty": "Hyderabadi Biryani"},
+      {"name": "Bawarchi", "cuisine": "Hyderabadi", "area": "RTC Cross Roads", "price_range": "₹250-500", "specialty": "Biryani"},
+      {"name": "Shah Ghouse", "cuisine": "Hyderabadi", "area": "Shalibanda", "price_range": "₹200-400", "specialty": "Haleem & Biryani"},
+      {"name": "Chutneys", "cuisine": "South Indian", "area": "Banjara Hills", "price_range": "₹200-400", "specialty": "Dosas & Pesarattu"},
+      {"name": "Ohri's Jiva", "cuisine": "Multi-cuisine", "area": "Necklace Road", "price_range": "₹500-1000", "specialty": "Grills & Kebabs"},
+      {"name": "Nimrah Cafe", "cuisine": "Irani Cafe", "area": "Charminar", "price_range": "₹30-100", "specialty": "Irani Chai & Osmania Biscuits"}
+    ],
+    "neighbourhoods": [
+      {"name": "Old City", "character": "Historic, bustling — Charminar, bazaars, biryani joints"},
+      {"name": "Banjara Hills / Jubilee Hills", "character": "Upscale dining, shopping, nightlife"},
+      {"name": "HITEC City", "character": "Modern IT district, malls, international restaurants"}
+    ],
+    "transport": {"metro": "Hyderabad Metro covers major corridors.", "auto": "Auto-rickshaws with meters. Typical ₹30-100.", "cab": "Uber/Ola reliable. Airport to city ~₹500-800."},
+    "tips": ["Best season: October to February", "Don't miss the biryani trail", "Golconda Fort light and sound show is worthwhile", "Old City is best explored on foot"]
+  },
+  "Kolkata": {
+    "top_attractions": [
+      {"name": "Victoria Memorial", "description": "Grand marble monument and museum", "cost": "₹30", "best_time": "Morning", "duration_mins": 120},
+      {"name": "Howrah Bridge", "description": "Iconic cantilever bridge over the Hooghly River", "cost": "Free", "best_time": "Evening", "duration_mins": 30},
+      {"name": "Indian Museum", "description": "Oldest and largest museum in India", "cost": "₹50", "best_time": "Morning", "duration_mins": 150},
+      {"name": "Dakshineswar Kali Temple", "description": "Famous Kali temple on the Hooghly River", "cost": "Free", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Park Street", "description": "Dining, nightlife, and cultural hub", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "College Street", "description": "World's largest second-hand book market", "cost": "Free", "best_time": "Morning", "duration_mins": 120},
+      {"name": "Marble Palace", "description": "19th century neoclassical mansion", "cost": "Free (permit needed)", "best_time": "Morning", "duration_mins": 60}
+    ],
+    "food_spots": [
+      {"name": "Peter Cat", "cuisine": "Continental", "area": "Park Street", "price_range": "₹400-800", "specialty": "Chelo Kebab"},
+      {"name": "6 Ballygunge Place", "cuisine": "Bengali", "area": "Ballygunge", "price_range": "₹500-900", "specialty": "Bengali Thali"},
+      {"name": "Flurys", "cuisine": "Continental/Bakery", "area": "Park Street", "price_range": "₹300-600", "specialty": "Breakfast & Pastries"},
+      {"name": "Arsalan", "cuisine": "Mughlai/Biryani", "area": "Park Circus", "price_range": "₹300-600", "specialty": "Kolkata Biryani"},
+      {"name": "Bhojohori Manna", "cuisine": "Bengali", "area": "Multiple locations", "price_range": "₹300-600", "specialty": "Ilish Machher Jhol"}
+    ],
+    "neighbourhoods": [
+      {"name": "Park Street", "character": "Dining, nightlife, colonial charm"},
+      {"name": "North Kolkata", "character": "Heritage, temples, narrow lanes, old-world charm"},
+      {"name": "South Kolkata", "character": "Modern, residential, cafes"}
+    ],
+    "transport": {"metro": "Kolkata Metro is India's oldest. North-South line covers key areas.", "auto": "Yellow cabs available. Use Uber/Ola for convenience.", "cab": "Airport to city centre ~₹400-600."},
+    "tips": ["Best season: October to March", "Must try: Rosogolla, Mishti Doi", "Victoria Memorial is best at sunset", "Hand-pulled rickshaws still operate in North Kolkata"]
+  },
+  "Ahmedabad": {
+    "top_attractions": [
+      {"name": "Sabarmati Ashram", "description": "Mahatma Gandhi's former home and museum", "cost": "Free", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Adalaj Stepwell", "description": "Ornate 15th century stepwell with carved pillars", "cost": "Free", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Sidi Saiyyed Mosque", "description": "Famous for intricate stone jali (latticework)", "cost": "Free", "best_time": "Morning", "duration_mins": 30},
+      {"name": "Kankaria Lake", "description": "Lakefront with zoo, amusement park, and gardens", "cost": "₹25", "best_time": "Evening", "duration_mins": 150},
+      {"name": "Law Garden Night Market", "description": "Vibrant street market with textiles and food", "cost": "Free", "best_time": "Evening", "duration_mins": 120},
+      {"name": "Calico Museum of Textiles", "description": "World-class textile museum", "cost": "Free (guided tours only)", "best_time": "Morning", "duration_mins": 120}
+    ],
+    "food_spots": [
+      {"name": "Manek Chowk", "cuisine": "Street Food", "area": "Old City", "price_range": "₹50-200", "specialty": "Khaman, Fafda, Jalebi"},
+      {"name": "Agashiye", "cuisine": "Gujarati Thali", "area": "House of MG", "price_range": "₹800-1500", "specialty": "Traditional Gujarati Thali"},
+      {"name": "Das Khaman House", "cuisine": "Gujarati Snacks", "area": "Multiple locations", "price_range": "₹50-150", "specialty": "Khaman Dhokla"},
+      {"name": "Lucky Restaurant", "cuisine": "Tea Room", "area": "Lal Darwaja", "price_range": "₹20-80", "specialty": "Bun Maska & Cutting Chai"}
+    ],
+    "neighbourhoods": [
+      {"name": "Old City (Walled City)", "character": "UNESCO Heritage City — pols, havelis, street food"},
+      {"name": "SG Highway", "character": "Modern malls, restaurants, IT offices"},
+      {"name": "Navrangpura", "character": "College area, cafes, budget dining"}
+    ],
+    "transport": {"metro": "Ahmedabad Metro Phase 1 operational.", "auto": "Shared autos common. Private auto ₹20-80.", "cab": "Uber/Ola available. City is easily navigable."},
+    "tips": ["Best season: November to February", "Ahmedabad is India's first UNESCO Heritage City", "Most restaurants are vegetarian", "Visit during Navratri (Sep/Oct) for the garba festivities"]
+  },
+  "Chennai": {
+    "top_attractions": [
+      {"name": "Marina Beach", "description": "India's longest urban beach (13km)", "cost": "Free", "best_time": "Evening", "duration_mins": 90},
+      {"name": "Kapaleeshwarar Temple", "description": "7th century Dravidian-style Shiva temple", "cost": "Free", "best_time": "Morning", "duration_mins": 60},
+      {"name": "Fort St. George", "description": "First English fortress in India (1644)", "cost": "₹15", "best_time": "Morning", "duration_mins": 90},
+      {"name": "Government Museum", "description": "Second oldest museum in India", "cost": "₹15", "best_time": "Morning", "duration_mins": 120},
+      {"name": "San Thome Cathedral", "description": "16th century cathedral built over Thomas the Apostle's tomb", "cost": "Free", "best_time": "Morning", "duration_mins": 45},
+      {"name": "Mahabalipuram", "description": "UNESCO shore temples, 60km from Chennai", "cost": "₹40", "best_time": "Morning (day trip)", "duration_mins": 300},
+      {"name": "T. Nagar Shopping", "description": "Largest shopping district — silks, jewellery", "cost": "Free", "best_time": "Afternoon", "duration_mins": 180}
+    ],
+    "food_spots": [
+      {"name": "Saravana Bhavan", "cuisine": "South Indian", "area": "Multiple locations", "price_range": "₹100-300", "specialty": "Ghee Pongal & Filter Coffee"},
+      {"name": "Murugan Idli Shop", "cuisine": "South Indian", "area": "T. Nagar", "price_range": "₹80-200", "specialty": "Soft Idlis with Chutneys"},
+      {"name": "Dakshin", "cuisine": "South Indian Fine Dining", "area": "ITC Grand Chola", "price_range": "₹1500-3000", "specialty": "Chettinad Chicken"},
+      {"name": "Marina Beach Stalls", "cuisine": "Street Food", "area": "Marina Beach", "price_range": "₹30-100", "specialty": "Sundal & Murukku"},
+      {"name": "Junior Kuppanna", "cuisine": "Chettinad", "area": "Nungambakkam", "price_range": "₹300-600", "specialty": "Mutton Chukka"}
+    ],
+    "neighbourhoods": [
+      {"name": "Mylapore", "character": "Temple town, traditional, authentic food"},
+      {"name": "Anna Nagar", "character": "Residential, parks, family-friendly"},
+      {"name": "T. Nagar", "character": "Shopping paradise — silks, gold, bargains"}
+    ],
+    "transport": {"metro": "Chennai Metro connects Airport, Central Station, and key areas.", "auto": "Auto-rickshaws with meters. Typical ₹30-100.", "cab": "Uber/Ola available. Airport to city ~₹300-500."},
+    "tips": ["Best season: November to February", "Summer (April-June) is extremely hot and humid", "Try filter coffee everywhere", "Mahabalipuram is a must-do day trip"]
+  }
+}
