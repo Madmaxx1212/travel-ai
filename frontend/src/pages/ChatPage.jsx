@@ -49,7 +49,7 @@ export default function ChatPage() {
             },
             onError: (err) => {
                 setIsTyping(false)
-                addMessage({ role: 'assistant', content: `⚠️ ${err || 'Something went wrong. Please try again.'}` })
+                addMessage({ role: 'assistant', content: `Something went wrong: ${err || 'Please try again.'}` })
                 assistantChunks.current = ''
             },
             onConnect: () => { },
@@ -64,7 +64,6 @@ export default function ChatPage() {
         return () => wsRef.current?.disconnect()
     }, [connectWS])
 
-    // Send initial message from landing page
     useEffect(() => {
         if (!initialSent.current && location.state?.initialMessage && wsRef.current) {
             const timer = setTimeout(() => {
@@ -85,21 +84,26 @@ export default function ChatPage() {
     }
 
     return (
-        <div className="flex h-[calc(100vh-56px)] mt-14">
+        <div className="flex h-[calc(100vh-64px)] mt-16">
             {/* Chat section */}
-            <div className="flex-1 flex flex-col min-w-0">
+            <div className="flex-1 flex flex-col min-w-0 bg-navy">
                 <ChatWindow />
 
                 {/* Inline flight results */}
                 {rankedFlights.length > 0 && (
-                    <div className="px-4 pb-2">
-                        <div className="flex items-center gap-2 mb-2">
-                            <span className="text-xs font-medium text-gray-400">Top Flights</span>
-                            <button onClick={() => setShowPanel(true)} className="text-xs text-primary hover:underline">View Details →</button>
+                    <div className="px-4 pb-3 border-t border-border-subtle pt-3">
+                        <div className="flex items-center gap-2 mb-3">
+                            <span className="text-xs font-medium text-slate-500 uppercase tracking-wider">Top Flights</span>
+                            <button onClick={() => setShowPanel(true)}
+                                className="text-xs text-primary-light hover:text-white transition-colors font-medium">
+                                View Details &rarr;
+                            </button>
                         </div>
-                        <div className="flex gap-3 overflow-x-auto pb-2">
+                        <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
                             {rankedFlights.slice(0, 3).map((f, i) => (
-                                <div key={i} className="min-w-[280px]"><FlightCard flight={f} compact /></div>
+                                <div key={i} className="min-w-[300px] flex-shrink-0">
+                                    <FlightCard flight={f} compact />
+                                </div>
                             ))}
                         </div>
                     </div>
@@ -107,7 +111,7 @@ export default function ChatPage() {
 
                 {/* Risk warnings */}
                 {riskWarnings.filter(w => w.severity === 'red').length > 0 && (
-                    <div className="px-4 pb-2 space-y-1">
+                    <div className="px-4 pb-3 space-y-2">
                         {riskWarnings.filter(w => w.severity === 'red').map((w, i) => (
                             <RiskWarningBanner key={i} warning={w} />
                         ))}
@@ -119,16 +123,17 @@ export default function ChatPage() {
 
             {/* Panel toggle */}
             <button onClick={() => setShowPanel(!showPanel)}
-                className="hidden lg:flex items-center justify-center w-6 border-l border-border/30 text-gray-500 hover:text-white hover:bg-card transition-colors">
+                className="hidden lg:flex items-center justify-center w-7 border-l border-border-subtle text-slate-600 hover:text-primary-light hover:bg-surface transition-all">
                 {showPanel ? <PanelRightClose size={14} /> : <PanelRightOpen size={14} />}
             </button>
 
             {/* Trip Plan Panel */}
             <AnimatePresence>
                 {showPanel && (
-                    <motion.div initial={{ width: 0 }} animate={{ width: 400 }} exit={{ width: 0 }}
+                    <motion.div initial={{ width: 0 }} animate={{ width: 420 }} exit={{ width: 0 }}
+                        transition={{ type: 'spring', damping: 25, stiffness: 250 }}
                         className="overflow-hidden flex-shrink-0">
-                        <div className="w-[400px] h-full">
+                        <div className="w-[420px] h-full">
                             <TripPlanPanel onClose={() => setShowPanel(false)} />
                         </div>
                     </motion.div>

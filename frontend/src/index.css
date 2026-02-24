@@ -2,60 +2,337 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ═══════════════════════════════════════
+   AI Travel Guardian+ — Premium Design System
+   ═══════════════════════════════════════ */
+
 :root {
-  --navy: #0A0F1E;
-  --navy-light: #111827;
-  --card: #1E2535;
-  --border: #2D3748;
-  --primary: #3B82F6;
-  --accent: #10B981;
+  /* Base palette */
+  --bg-deep: #050816;
+  --bg-base: #0a0f1e;
+  --bg-surface: #0f1629;
+  --bg-card: #141c30;
+  --bg-elevated: #1a2340;
+  --border-subtle: rgba(99, 102, 241, 0.08);
+  --border-default: rgba(99, 102, 241, 0.15);
+  --border-strong: rgba(99, 102, 241, 0.25);
+
+  /* Brand colors */
+  --blue: #6366f1;
+  --blue-glow: rgba(99, 102, 241, 0.4);
+  --emerald: #10b981;
+  --emerald-glow: rgba(16, 185, 129, 0.35);
+  --amber: #f59e0b;
+  --amber-glow: rgba(245, 158, 11, 0.35);
+  --rose: #f43f5e;
+  --rose-glow: rgba(244, 63, 94, 0.35);
+  --cyan: #06b6d4;
+
+  /* Text */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── Global Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background-color: var(--navy);
-  color: #F9FAFB;
-  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--navy-light); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #4a5568; }
-
-/* Glassmorphism utility */
-.glass {
-  background: rgba(30, 37, 53, 0.7);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(45, 55, 72, 0.5);
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: #fff;
 }
 
-/* Gradient text */
+/* ── Premium Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--blue), var(--emerald));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+}
+
+/* ── Typography ── */
+.font-display {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* ── Gradient Text ── */
 .gradient-text {
-  background: linear-gradient(135deg, #3B82F6, #10B981);
+  background: linear-gradient(135deg, #818cf8, #6366f1, #06b6d4, #10b981);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 6s ease infinite;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #f59e0b, #f43f5e, #ec4899);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Particle animation for landing */
-@keyframes particles {
-  0%, 100% { opacity: 0; transform: translateY(0) scale(0); }
-  50% { opacity: 1; transform: translateY(-40px) scale(1); }
+/* ── Glass Card System ── */
+.glass {
+  background: rgba(15, 22, 41, 0.6);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border: 1px solid var(--border-subtle);
 }
 
-.particle {
+.glass-card {
+  background: linear-gradient(135deg, rgba(20, 28, 48, 0.8), rgba(15, 22, 41, 0.6));
+  backdrop-filter: blur(24px) saturate(1.8);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8);
+  border: 1px solid var(--border-default);
+  box-shadow:
+    0 0 0 1px rgba(99, 102, 241, 0.03),
+    0 4px 24px -4px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-strong);
+  box-shadow:
+    0 0 0 1px rgba(99, 102, 241, 0.06),
+    0 8px 40px -8px rgba(0, 0, 0, 0.6),
+    0 0 60px -12px var(--blue-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.glass-nav {
+  background: rgba(5, 8, 22, 0.7);
+  backdrop-filter: blur(24px) saturate(2);
+  -webkit-backdrop-filter: blur(24px) saturate(2);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* ── Glow Effects ── */
+.glow-blue {
+  box-shadow: 0 0 40px -8px var(--blue-glow);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 40px -8px var(--emerald-glow);
+}
+
+.glow-amber {
+  box-shadow: 0 0 40px -8px var(--amber-glow);
+}
+
+.glow-rose {
+  box-shadow: 0 0 40px -8px var(--rose-glow);
+}
+
+/* ── Animated Gradient Border ── */
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(59, 130, 246, 0.4);
-  border-radius: 50%;
-  animation: particles 4s infinite;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--blue), var(--emerald), var(--cyan));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-/* Smooth page transitions */
-.page-enter { opacity: 0; transform: translateY(10px); }
-.page-enter-active { opacity: 1; transform: translateY(0); transition: all 0.3s ease; }
+.gradient-border:hover::before,
+.gradient-border:focus-within::before {
+  opacity: 1;
+}
+
+/* ── Dot Grid Pattern ── */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Mesh Gradient Background ── */
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 50%, rgba(6, 182, 212, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(16, 185, 129, 0.06), transparent),
+    var(--bg-deep);
+}
+
+/* ── Animations ── */
+@keyframes gradient-shift {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce-dot {
+
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+/* ── Shimmer Effect ── */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* ── Orb Decorations ── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.orb-blue {
+  background: radial-gradient(circle, var(--blue-glow), transparent 70%);
+}
+
+.orb-emerald {
+  background: radial-gradient(circle, var(--emerald-glow), transparent 70%);
+}
+
+.orb-cyan {
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.2), transparent 70%);
+}
+
+/* ── Autocomplete Dropdown ── */
+.autocomplete-dropdown {
+  background: rgba(20, 28, 48, 0.95);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--border-default);
+  box-shadow:
+    0 12px 40px -8px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(99, 102, 241, 0.05);
+}
+
+.autocomplete-item {
+  transition: all 0.15s ease;
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.active {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+/* ── Smooth Page Transitions ── */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}

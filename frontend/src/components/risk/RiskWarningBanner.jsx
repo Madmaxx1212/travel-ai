@@ -1,27 +1,25 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { AlertTriangle, AlertCircle, Info, X } from 'lucide-react'
+import { AlertTriangle, AlertCircle, Info } from 'lucide-react'
 
-const icons = { red: AlertTriangle, amber: AlertCircle, blue: Info }
-const styles = {
-    red: 'border-l-red-500 bg-red-500/10',
-    amber: 'border-l-yellow-500 bg-yellow-500/10',
-    blue: 'border-l-blue-400 bg-blue-400/10',
+const severityConfig = {
+    red: { icon: AlertTriangle, bg: 'bg-rose-500/10', border: 'border-rose-500/20', text: 'text-rose-400', glow: 'shadow-[0_0_20px_-4px_rgba(244,63,94,0.3)]' },
+    yellow: { icon: AlertCircle, bg: 'bg-amber-500/10', border: 'border-amber-500/20', text: 'text-amber-400', glow: '' },
+    green: { icon: Info, bg: 'bg-emerald-500/10', border: 'border-emerald-500/20', text: 'text-emerald-400', glow: '' },
 }
 
-export default function RiskWarningBanner({ warning, onDismiss }) {
-    const Icon = icons[warning.severity] || Info
+export default function RiskWarningBanner({ warning }) {
+    const config = severityConfig[warning.severity] || severityConfig.yellow
+    const Icon = config.icon
+
     return (
-        <motion.div initial={{ x: -20, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
-            className={`border-l-4 rounded-r-lg p-3 flex items-start gap-3 ${styles[warning.severity] || styles.blue}`}>
-            <Icon size={16} className={`flex-shrink-0 mt-0.5 ${warning.severity === 'red' ? 'text-red-400' : warning.severity === 'amber' ? 'text-yellow-400' : 'text-blue-400'}`} />
-            <div className="flex-1">
-                <div className="text-xs font-semibold text-white capitalize">{warning.warning_type} Warning</div>
-                <div className="text-xs text-gray-300 mt-0.5">{warning.message}</div>
+        <div className={`flex items-start gap-3 p-3.5 rounded-xl ${config.bg} border ${config.border} ${config.glow} transition-all`}>
+            <div className="flex-shrink-0 mt-0.5">
+                <Icon size={16} className={config.text} />
             </div>
-            {onDismiss && (
-                <button onClick={onDismiss} className="text-gray-500 hover:text-white"><X size={14} /></button>
-            )}
-        </motion.div>
+            <div className="flex-1 min-w-0">
+                <p className={`text-xs font-medium ${config.text}`}>{warning.flight_number}</p>
+                <p className="text-xs text-slate-300 mt-0.5 leading-relaxed">{warning.message}</p>
+            </div>
+        </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Plane, Hotel, Map, Utensils, X } from 'lucide-react'
+import { Plane, Hotel, Map, Utensils, X, ArrowRight } from 'lucide-react'
 import useStore from '../../store/useStore'
 import FlightCard from '../flight/FlightCard'
 import FlightComparison from '../flight/FlightComparison'
@@ -23,74 +23,98 @@ export default function TripPlanPanel({ onClose }) {
 
     if (!hasData) return null
 
+    const activeTabIdx = tabs.findIndex(t => t.key === activeTab)
+
     return (
         <motion.div initial={{ x: '100%' }} animate={{ x: 0 }} exit={{ x: '100%' }}
-            transition={{ type: 'spring', damping: 25 }}
-            className="h-full flex flex-col bg-navy-light border-l border-border/50">
+            transition={{ type: 'spring', damping: 28, stiffness: 300 }}
+            className="h-full flex flex-col bg-navy-light border-l border-border-subtle">
+
             {/* Header */}
-            <div className="p-4 border-b border-border/50 flex items-center justify-between">
-                <div>
-                    <h3 className="text-sm font-semibold text-white">
-                        {tripPlan?.source || recommendedFlight?.source} → {tripPlan?.destination || recommendedFlight?.destination}
-                    </h3>
-                    <p className="text-xs text-gray-400">{tripPlan?.travel_date || 'Trip Plan'}</p>
+            <div className="p-5 border-b border-border-subtle">
+                <div className="flex items-center justify-between">
+                    <div>
+                        <h3 className="font-display text-sm font-semibold text-white flex items-center gap-2">
+                            {tripPlan?.source || recommendedFlight?.source}
+                            <ArrowRight size={12} className="text-primary-light" />
+                            {tripPlan?.destination || recommendedFlight?.destination}
+                        </h3>
+                        <p className="text-xs text-slate-500 mt-0.5">{tripPlan?.travel_date || 'Trip Plan'}</p>
+                    </div>
+                    <button onClick={onClose}
+                        className="p-1.5 rounded-lg hover:bg-surface-elevated text-slate-500 hover:text-white transition-all lg:hidden">
+                        <X size={16} />
+                    </button>
                 </div>
-                <button onClick={onClose} className="p-1 hover:bg-card rounded-lg transition-colors lg:hidden">
-                    <X size={16} className="text-gray-400" />
-                </button>
             </div>
 
-            {/* Tabs */}
-            <div className="flex border-b border-border/30">
+            {/* Tab bar with sliding indicator */}
+            <div className="relative flex border-b border-border-subtle">
                 {tabs.map((tab) => (
                     <button key={tab.key} onClick={() => setActiveTab(tab.key)}
-                        className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 text-xs font-medium transition-colors
-              ${activeTab === tab.key ? 'text-primary border-b-2 border-primary' : 'text-gray-400 hover:text-gray-200'}`}>
-                        <tab.icon size={12} />{tab.label}
+                        className={`flex-1 flex items-center justify-center gap-1.5 py-3 text-xs font-medium transition-colors relative z-10
+                        ${activeTab === tab.key ? 'text-primary-light' : 'text-slate-500 hover:text-slate-300'}`}>
+                        <tab.icon size={13} />{tab.label}
                     </button>
                 ))}
+                {/* Sliding indicator */}
+                <motion.div
+                    className="absolute bottom-0 h-0.5 bg-gradient-to-r from-primary to-cyan rounded-full"
+                    animate={{ left: `${activeTabIdx * 25}%`, width: '25%' }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                />
             </div>
 
             {/* Content */}
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
-                {activeTab === 'flight' && (
-                    <>
-                        {recommendedFlight && (
-                            <div className="relative">
-                                <FlightCard flight={recommendedFlight} />
-                                <div className="flex justify-center mt-3">
-                                    <CCSGauge score={recommendedFlight.ccs_score} />
+                <AnimatePresence mode="wait">
+                    {activeTab === 'flight' && (
+                        <motion.div key="flight" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}>
+                            {recommendedFlight && (
+                                <div className="relative mb-4">
+                                    <FlightCard flight={recommendedFlight} />
+                                    <div className="flex justify-center mt-4">
+                                        <CCSGauge score={recommendedFlight.ccs_score} />
+                                    </div>
                                 </div>
-                            </div>
-                        )}
-                        {rankedFlights.length > 1 && (
-                            <div>
-                                <h4 className="text-xs font-medium text-gray-400 mb-2">Compare Top Flights</h4>
-                                <FlightComparison flights={rankedFlights} />
-                            </div>
-                        )}
-                    </>
-                )}
+                            )}
+                            {rankedFlights.length > 1 && (
+                                <div>
+                                    <h4 className="text-xs font-medium text-slate-500 mb-3 uppercase tracking-wider">Compare Top Flights</h4>
+                                    <FlightComparison flights={rankedFlights} />
+                                </div>
+                            )}
+                        </motion.div>
+                    )}
 
-                {activeTab === 'hotel' && (
-                    <div className="space-y-3">
-                        {recommendedHotels.map((h, i) => <HotelCard key={i} hotel={h} />)}
-                        {recommendedHotels.length === 0 && <p className="text-sm text-gray-400 text-center py-8">No hotel recommendations yet</p>}
-                    </div>
-                )}
+                    {activeTab === 'hotel' && (
+                        <motion.div key="hotel" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}
+                            className="space-y-3">
+                            {recommendedHotels.map((h, i) => <HotelCard key={i} hotel={h} />)}
+                            {recommendedHotels.length === 0 && (
+                                <p className="text-sm text-slate-500 text-center py-12">No hotel recommendations yet</p>
+                            )}
+                        </motion.div>
+                    )}
 
-                {activeTab === 'itinerary' && (
-                    <>
-                        {itinerary ? <ItineraryTimeline itinerary={itinerary} /> : <p className="text-sm text-gray-400 text-center py-8">No itinerary generated yet</p>}
-                    </>
-                )}
+                    {activeTab === 'itinerary' && (
+                        <motion.div key="itinerary" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}>
+                            {itinerary ? <ItineraryTimeline itinerary={itinerary} /> : (
+                                <p className="text-sm text-slate-500 text-center py-12">No itinerary yet</p>
+                            )}
+                        </motion.div>
+                    )}
 
-                {activeTab === 'food' && (
-                    <div className="space-y-3">
-                        {foodRecommendations.map((f, i) => <FoodCard key={i} food={f} />)}
-                        {foodRecommendations.length === 0 && <p className="text-sm text-gray-400 text-center py-8">No food recommendations yet</p>}
-                    </div>
-                )}
+                    {activeTab === 'food' && (
+                        <motion.div key="food" initial={{ opacity: 0, x: 10 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -10 }}
+                            className="space-y-3">
+                            {foodRecommendations.map((f, i) => <FoodCard key={i} food={f} />)}
+                            {foodRecommendations.length === 0 && (
+                                <p className="text-sm text-slate-500 text-center py-12">No food recommendations yet</p>
+                            )}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </motion.div>
     )
