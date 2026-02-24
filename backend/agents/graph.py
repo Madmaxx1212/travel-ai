@@ -137,7 +137,7 @@ class TravelAgentPipeline:
 
         state["response_type"] = "replan"
         confirm = state.get("response_text", "")
-        state["response_text"] = confirm or "✅ Your trip plan has been updated!"
+        state["response_text"] = confirm or "[OK] Your trip plan has been updated!"
         return state
 
     def _handle_general_chat(self, state: TravelState) -> TravelState:
@@ -194,20 +194,20 @@ class TravelAgentPipeline:
         if warnings:
             red_warnings = [w for w in warnings if w.get("severity") == "red"]
             if red_warnings:
-                parts.append("\n⚠️ **Important Warnings:**")
+                parts.append("\n**Important Warnings:**")
                 for w in red_warnings:
-                    parts.append(f"  🔴 {w.get('message', '')}")
+                    parts.append(f"  [!] {w.get('message', '')}")
 
         # Hotel summary
         hotels = state.get("recommended_hotels", [])
         if hotels:
             top_hotel = hotels[0]
-            parts.append(f"\n🏨 **Top Hotel Pick:** {top_hotel.get('name', 'N/A')} — ₹{top_hotel.get('price_per_night', 0):,.0f}/night, {top_hotel.get('rating', 0)}/5 rating")
+            parts.append(f"\n**Top Hotel Pick:** {top_hotel.get('name', 'N/A')} -- Rs.{top_hotel.get('price_per_night', 0):,.0f}/night, {top_hotel.get('rating', 0)}/5 rating")
 
         # Itinerary summary
         itinerary = state.get("itinerary", {})
         if itinerary and "days" in itinerary:
             num_days = len(itinerary["days"])
-            parts.append(f"\n📋 I've prepared a **{num_days}-day itinerary** for you. Check the trip panel for the full day-by-day plan!")
+            parts.append(f"\nI've prepared a **{num_days}-day itinerary** for you. Check the trip panel for the full day-by-day plan!")
 
         return "\n".join(parts) if parts else "Here's your trip plan! Check the panel on the right for all details."

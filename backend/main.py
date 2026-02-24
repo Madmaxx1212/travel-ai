@@ -152,7 +152,7 @@ async def lifespan(app: FastAPI):
         logger.error(f"[ERROR] Agent pipeline init failed: {e}")
 
     logger.info("=" * 60)
-    logger.info("  AI Travel Guardian+ — Ready!")
+    logger.info("  AI Travel Guardian+ -- Ready!")
     logger.info(f"  DB: {app_state.get('db', 'unknown')}")
     logger.info(f"  Model: {'loaded' if app_state.get('model_loaded') else 'not loaded'}")
     logger.info(f"  Groq: {app_state.get('groq_status', 'unknown')}")

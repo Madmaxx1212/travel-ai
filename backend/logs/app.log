@@ -171,3 +171,331 @@
 2026-02-21 20:25:20 | INFO     | travel_guardian | ============================================================
 2026-02-21 20:25:20 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
 2026-02-21 20:25:20 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:25:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:26 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:25:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:26 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:25:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:26 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:25:26 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:25:31 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:25:31 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:25:53 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:25:53 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:25:54 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:25:54 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:25:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:25:54 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:25:54 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:25:54 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:25:54 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:25:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:54 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:25:54 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:25:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:25:54 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:25:54 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:25:54 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:25:54 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:25:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:54 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:25:54 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:25:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:59 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:25:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:59 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:25:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:59 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:25:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:25:59 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:26:04 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:26:04 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:26:24 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:26:24 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:26:25 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:26:25 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:26:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:26:25 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:26:25 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:26:25 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:26:25 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:26:25 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:26:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:26:25 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:26:25 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:26:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:26:25 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:26:25 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:26:25 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:26:25 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:26:25 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:26:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:23 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:27:23 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:27:28 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:28 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:27:28 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:28 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:27:28 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:28 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:27:28 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:28 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:27:33 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:27:33 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:27:53 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:27:53 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:27:54 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:27:54 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:27:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:27:54 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:27:54 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:27:54 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:27:54 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:27:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:54 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:27:54 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:27:54 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:27:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:27:54 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:27:54 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:27:54 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:27:54 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:27:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:55 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:27:58 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:58 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:27:58 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:58 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:27:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:59 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:27:59 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:27:59 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:28:03 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:28:04 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:28:24 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:28:25 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-21 20:28:25 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:28:25 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:28:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:25 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:28:25 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:28:25 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:28:25 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:28:25 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:28:25 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:26 | WARNING  | travel_guardian | [WARN] No Groq API key configured -- LLM features disabled
+2026-02-21 20:28:26 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-21 20:28:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:26 | INFO     | travel_guardian |   AI Travel Guardian+ — Ready!
+2026-02-21 20:28:26 | INFO     | travel_guardian |   DB: connected
+2026-02-21 20:28:26 | INFO     | travel_guardian |   Model: loaded
+2026-02-21 20:28:26 | INFO     | travel_guardian |   Groq: no_key
+2026-02-21 20:28:26 | INFO     | travel_guardian |   FAISS: ok
+2026-02-21 20:28:26 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:49 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-21 20:28:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:28:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:54 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:28:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:54 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-21 20:28:54 | INFO     | travel_guardian | ============================================================
+2026-02-21 20:28:54 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-21 20:29:01 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-21 20:29:01 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:40:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:40:47 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:40:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:40:48 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:41:20 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:42:53 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:42:55 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:42:55 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:42:55 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:42:55 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:42:55 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:42:55 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:42:55 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:42:55 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:42:55 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:42:55 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:43:01 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:43:01 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:43:01 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:43:01 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:43:09 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:43:45 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:43:47 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:43:47 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:43:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:43:47 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:43:47 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:43:47 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:43:47 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:43:47 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:43:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:46:41 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:46:49 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:46:49 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:46:49 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:46:49 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:47:00 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:47:49 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:47:52 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:47:52 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:47:52 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:47:52 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:47:52 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:47:52 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:47:52 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:47:52 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:47:52 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:47:52 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:48:04 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:48:04 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:48:04 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:48:04 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:48:18 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:49:07 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:49:09 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:49:09 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:49:09 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:49:09 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:49:09 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:49:09 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:49:09 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:49:09 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:49:09 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:50:10 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:50:17 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:50:17 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:50:17 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:50:17 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:50:26 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:51:03 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:51:06 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:51:06 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:51:06 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:51:06 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:51:06 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:51:06 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:51:06 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:51:06 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:51:06 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:51:06 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:51:15 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:51:15 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:51:15 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:51:15 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:51:28 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 11:52:18 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 11:52:21 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 11:52:21 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 11:52:21 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:52:21 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 11:52:21 | INFO     | travel_guardian |   DB: connected
+2026-02-24 11:52:21 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 11:52:21 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 11:52:21 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 11:52:21 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:54:57 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 11:58:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:58:47 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 11:58:47 | INFO     | travel_guardian | ============================================================
+2026-02-24 11:58:47 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 11:59:53 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:01:48 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:01:53 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:01:53 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:01:53 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:01:53 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:01:53 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:01:53 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:01:53 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:01:53 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:01:53 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:04:41 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 12:04:49 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:04:49 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 12:04:49 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:04:49 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 12:04:55 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:05:22 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:05:24 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:05:24 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:05:24 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:05:24 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:05:24 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:05:24 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:05:24 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:05:24 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:05:24 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:05:24 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 12:05:29 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:05:29 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 12:05:29 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:05:29 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 12:05:36 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:06:01 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:06:02 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:06:02 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:06:02 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:02 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:06:02 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:06:02 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:06:02 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:06:02 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:06:02 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:02 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 12:06:08 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:08 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 12:06:08 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:08 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 12:06:13 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:06:41 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:06:43 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:43 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 12:06:43 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:43 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 12:06:44 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:06:44 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:06:44 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:44 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:06:44 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:06:44 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:06:44 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:06:44 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:06:44 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:06:44 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 12:06:52 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:07:28 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:07:30 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:07:30 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:07:30 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:07:30 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:07:30 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:07:30 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:07:30 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:07:30 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:07:30 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:07:55 | INFO     | travel_guardian | AI Travel Guardian+ shutting down...
+2026-02-24 12:08:07 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:08:07 | INFO     | travel_guardian |   AI Travel Guardian+ — Starting Up
+2026-02-24 12:08:07 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:08:07 | INFO     | travel_guardian | [OK] Database tables created
+2026-02-24 12:08:19 | INFO     | travel_guardian | [OK] ML model loaded from disk
+2026-02-24 12:09:00 | INFO     | travel_guardian | [OK] FAISS indices built/loaded
+2026-02-24 12:09:02 | INFO     | travel_guardian | [OK] Groq API connected
+2026-02-24 12:09:02 | INFO     | travel_guardian | [OK] Agent pipeline initialized
+2026-02-24 12:09:02 | INFO     | travel_guardian | ============================================================
+2026-02-24 12:09:02 | INFO     | travel_guardian |   AI Travel Guardian+ -- Ready!
+2026-02-24 12:09:02 | INFO     | travel_guardian |   DB: connected
+2026-02-24 12:09:02 | INFO     | travel_guardian |   Model: loaded
+2026-02-24 12:09:02 | INFO     | travel_guardian |   Groq: ok
+2026-02-24 12:09:02 | INFO     | travel_guardian |   FAISS: ok
+2026-02-24 12:09:02 | INFO     | travel_guardian | ============================================================

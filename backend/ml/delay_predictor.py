@@ -140,7 +140,7 @@ class FlightDelayPredictor:
 
     def train(self, df: pd.DataFrame) -> dict:
         """Train XGBoost model on flight data."""
-        print("🔧 Preparing features for training...")
+        print("[INFO] Preparing features for training...")
         X = self._prepare_features(df)
         y = self._generate_target(df)
 
@@ -148,8 +148,8 @@ class FlightDelayPredictor:
             X, y, test_size=0.2, random_state=42, stratify=y
         )
 
-        print(f"📊 Training set: {len(X_train)} | Test set: {len(X_test)}")
-        print(f"📊 Positive rate: {y.mean():.2%}")
+        print(f"[INFO] Training set: {len(X_train)} | Test set: {len(X_test)}")
+        print(f"[INFO] Positive rate: {y.mean():.2%}")
 
         self.model = xgb.XGBClassifier(
             n_estimators=200,
@@ -182,14 +182,14 @@ class FlightDelayPredictor:
             "roc_auc": round(roc_auc_score(y_test, y_proba), 4),
         }
 
-        print(f"✅ Model trained — Accuracy: {metrics['accuracy']}, F1: {metrics['f1']}, AUC: {metrics['roc_auc']}")
+        print(f"[OK] Model trained -- Accuracy: {metrics['accuracy']}, F1: {metrics['f1']}, AUC: {metrics['roc_auc']}")
 
         # Initialize SHAP explainer
         self.explainer = shap.TreeExplainer(self.model)
 
         # Save
         self._save_model()
-        print(f"💾 Model saved to {self.model_path}")
+        print(f"[OK] Model saved to {self.model_path}")
 
         return metrics
 

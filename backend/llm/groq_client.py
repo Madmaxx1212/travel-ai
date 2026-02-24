@@ -45,37 +45,52 @@ class GroqLLMClient:
 
     def chat_json(self, messages: List[Dict], model: str = None,
                   temperature: float = 0.1, max_tokens: int = 2000) -> dict:
-        """Chat completion that parses JSON response."""
-        raw = self.chat(messages, model=model, temperature=temperature, max_tokens=max_tokens)
-        # Try to extract JSON from response
-        raw = raw.strip()
-        if raw.startswith("```json"):
-            raw = raw[7:]
-        if raw.startswith("```"):
-            raw = raw[3:]
-        if raw.endswith("```"):
-            raw = raw[:-3]
-        raw = raw.strip()
-        try:
-            return json.loads(raw)
-        except json.JSONDecodeError:
-            # Try to find JSON within the text
-            start = raw.find("{")
-            end = raw.rfind("}") + 1
-            if start >= 0 and end > start:
+        """Chat completion that returns parsed JSON.
+        Uses Groq's native JSON mode for reliable structured output.
+        """
+        use_model = model or self.smart_model
+
+        for attempt in range(self.max_retries):
+            try:
+                response = self.client.chat.completions.create(
+                    model=use_model,
+                    messages=messages,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    response_format={"type": "json_object"},
+                )
+                raw = response.choices[0].message.content or ""
+                raw = raw.strip()
                 try:
-                    return json.loads(raw[start:end])
+                    return json.loads(raw)
                 except json.JSONDecodeError:
                     pass
-            # Try array
-            start = raw.find("[")
-            end = raw.rfind("]") + 1
-            if start >= 0 and end > start:
+                # Fallback: strip markdown fences
+                if raw.startswith("```"):
+                    raw = raw.split("\n", 1)[1] if "\n" in raw else raw[3:]
+                if raw.endswith("```"):
+                    raw = raw[:-3]
+                raw = raw.strip()
                 try:
-                    return json.loads(raw[start:end])
+                    return json.loads(raw)
                 except json.JSONDecodeError:
                     pass
-            return {"error": "Failed to parse JSON", "raw": raw[:500]}
+                # Fallback: find JSON object or array
+                for start_char, end_char in [("{", "}"), ("[", "]")]:
+                    start = raw.find(start_char)
+                    end = raw.rfind(end_char) + 1
+                    if start >= 0 and end > start:
+                        try:
+                            return json.loads(raw[start:end])
+                        except json.JSONDecodeError:
+                            continue
+                return {"error": "Failed to parse JSON", "raw": raw[:500]}
+            except Exception as e:
+                if attempt < self.max_retries - 1:
+                    wait = self.retry_delay * (2 ** attempt)
+                    time.sleep(wait)
+                else:
+                    return {"error": f"Groq API failed: {str(e)[:200]}"}
 
     def stream_chat(self, messages: List[Dict], model: str = None,
                     temperature: float = 0.3, max_tokens: int = 1500):

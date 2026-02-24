@@ -54,7 +54,7 @@ def explanation_agent(state: TravelState, llm_client) -> dict:
         explanation = llm_client.chat(messages, model=llm_client.fast_model, temperature=0.4, max_tokens=400)
     except Exception:
         explanation = (
-            f"✈️ I recommend **{recommended.get('airline')} {recommended.get('flight_number')}** — "
+            f"I recommend **{recommended.get('airline')} {recommended.get('flight_number')}** -- "
             f"scoring {ccs_score}/100 on our Convenience Score. {shap_text}"
         )
 

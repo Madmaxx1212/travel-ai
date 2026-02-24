@@ -6,7 +6,7 @@ All system and user prompts for the multi-agent pipeline.
 INTENT_EXTRACTION_PROMPT = """You are a travel intent extraction AI. Extract structured travel information from user messages.
 
 Output ONLY valid JSON with these fields:
-{
+{{
   "source": "city name or IATA code or null",
   "destination": "city name or IATA code or null",
   "travel_date": "YYYY-MM-DD or null",
@@ -19,14 +19,14 @@ Output ONLY valid JSON with these fields:
   "traveller_type": "solo|couple|family|business",
   "needs_clarification": false,
   "clarification_question": null
-}
+}}
 
 If any critical field (source, destination, travel_date) cannot be determined, set needs_clarification to true.
 Extract priority from phrases like:
-  "hate delays" / "reliable" → "low_delay"
-  "cheap" / "budget" / "affordable" → "low_price"
-  "comfortable" / "best service" / "premium" → "best_service"
-  no preference → "balanced"
+  "hate delays" / "reliable" -> "low_delay"
+  "cheap" / "budget" / "affordable" -> "low_price"
+  "comfortable" / "best service" / "premium" -> "best_service"
+  no preference -> "balanced"
 
 User message: {user_message}"""
 
@@ -43,23 +43,23 @@ User Priority: {user_priority}
 User Budget: {user_budget}
 
 Instructions:
-1. Start with "✈️ I recommend **{airline} {flight_number}**"
+1. Start with "I recommend **{airline} {flight_number}**"
 2. Give 2-3 specific data-backed reasons why this is the best choice
 3. Mention the CCS score: "This flight scores {ccs_score}/100 on our Convenience Score"
 4. Translate the SHAP explanation into plain English (1-2 sentences)
 5. If there are cheaper alternatives, briefly acknowledge the tradeoff
 6. Keep it under 150 words, conversational, friendly
-7. Do NOT make up any data — only use what is provided above"""
+7. Do NOT make up any data -- only use what is provided above"""
 
 RISK_WARNING_PROMPT = """Generate risk warnings for the following flights. Be direct, factual, and helpful.
 Only generate warnings where risk is genuine. Do not exaggerate.
 
 Flights data: {flights_data}
 Threshold rules:
-  - delay_prob > 0.40 → HIGH delay warning
-  - delay_prob 0.25-0.40 → MEDIUM delay caution
-  - price is >35% below route average → price anomaly notice
-  - airline_sentiment_score < 0.45 → service quality warning
+  - delay_prob > 0.40 -> HIGH delay warning
+  - delay_prob 0.25-0.40 -> MEDIUM delay caution
+  - price is >35% below route average -> price anomaly notice
+  - airline_sentiment_score < 0.45 -> service quality warning
 
 Output JSON array of warnings:
 [
@@ -142,7 +142,7 @@ Output as JSON:
           "name": "Restaurant Name",
           "cuisine": "Cuisine Type",
           "area": "Area Name",
-          "price_range": "₹300-600 per person",
+          "price_range": "Rs.300-600 per person",
           "must_try": "Signature Dish"
         }}
       ]

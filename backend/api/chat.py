@@ -2,6 +2,7 @@
 
 import json
 import uuid
+import asyncio
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Depends
 from database.database import SessionLocal, get_db
 from database.models import Conversation, TripPlan
@@ -63,6 +64,8 @@ async def websocket_chat(websocket: WebSocket, session_id: str):
                 await websocket.send_json({"type": "done", "full_response": "System is initializing."})
                 continue
 
+            await websocket.send_json({"type": "chunk", "content": "Analysing your request..."})
+
             state = {
                 "user_message": user_message,
                 "session_id": session_id,
@@ -84,7 +87,7 @@ async def websocket_chat(websocket: WebSocket, session_id: str):
                 **trip_state,
             }
 
-            result = agent_pipeline.run(state)
+            result = await asyncio.to_thread(agent_pipeline.run, state)
 
             # Stream response text
             response_text = result.get("response_text", "")
