@@ -77,10 +77,11 @@ class TravelAgentPipeline:
             hotel_updates = hotel_agent(state, self.llm)
             state.update(hotel_updates)
 
-            # Step 6: Itinerary generation (if num_days is set)
-            if state.get("num_days"):
-                itin_updates = itinerary_agent(state, self.llm)
-                state.update(itin_updates)
+            # Step 6: Itinerary + food recommendations (always run when trip found)
+            if not state.get("num_days"):
+                state["num_days"] = 3  # default to 3 days
+            itin_updates = itinerary_agent(state, self.llm)
+            state.update(itin_updates)
 
             # Compose final response
             state["response_type"] = "trip_plan"
@@ -131,9 +132,10 @@ class TravelAgentPipeline:
                 state.update(expl_updates)
             hotel_updates = hotel_agent(state, self.llm)
             state.update(hotel_updates)
-            if state.get("num_days"):
-                itin_updates = itinerary_agent(state, self.llm)
-                state.update(itin_updates)
+            if not state.get("num_days"):
+                state["num_days"] = 3
+            itin_updates = itinerary_agent(state, self.llm)
+            state.update(itin_updates)
 
         state["response_type"] = "replan"
         confirm = state.get("response_text", "")
